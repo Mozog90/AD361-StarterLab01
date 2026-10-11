@@ -10,7 +10,7 @@ Explanation: There's an extra comma after eggs that creates an empty spot in the
 
 Suggested Fix: Remove the extra comma.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 2
 
@@ -22,7 +22,7 @@ Explanation: The object uses = instead of : when assigning the name and price. T
 
 Suggested Fix: Replace the = signs with colons.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 3
 
@@ -34,7 +34,7 @@ Explanation: indexOf("name") searches for the actual word "name" instead of the 
 
 Suggested Fix: Use findIndex() to search for the item by its name and use the result when deleting it.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 4
 
@@ -46,7 +46,7 @@ Explanation: pop() always removes the last item in the list, even if that's not 
 
 Suggested Fix: Use splice() with the correct index to remove the item.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 5
 
@@ -58,7 +58,7 @@ Explanation: The loop tries to go through the number 3 instead of the grocery li
 
 Suggested Fix: Loop through the ITEMS array instead.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 6
 
@@ -70,7 +70,7 @@ Explanation: The function uses total as if it were a number, but total is actual
 
 Suggested Fix: Create a subtotal variable starting at 0, add each item's price, and return the subtotal.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 7
 
@@ -82,7 +82,7 @@ Explanation: The function adds the tax rate directly to the subtotal instead of 
 
 Suggested Fix: Multiply the subtotal by the tax rate and add that amount to the subtotal.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 8
 
@@ -94,7 +94,7 @@ Explanation: The loop already gives us each item, but the code tries to use it a
 
 Suggested Fix: Use the item's name and price directly and use backticks with ${} to display them.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 9
 
@@ -106,7 +106,7 @@ Explanation: String(total) refers to the function itself instead of calling it t
 
 Suggested Fix: Use total() to calculate and display the subtotal.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 10
 
@@ -118,7 +118,7 @@ Explanation: The console.log statement starts with a backtick but ends with a do
 
 Suggested Fix: Use matching backticks.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 11
 
@@ -130,7 +130,7 @@ Explanation: The receipt prints the tax rate instead of the actual tax amount. I
 
 Suggested Fix: Calculate the tax amount for the receipt and pass taxRate as a number.
 
-Status: Ongoing
+Status: Fixed
 
 ## Bug 12
 
@@ -142,7 +142,7 @@ Explanation: The total has an extra + in the output, and the receipt won't displ
 
 Suggested Fix: Remove the extra + and use a template literal to display the total.
 
-Status: Ongoing
+Status: Fixed
 
 ## Root Cause, Error, Defect, and Failure
 
@@ -174,6 +174,6 @@ Explanation: ESLint found that the object uses = instead of : when setting its p
 
 Suggested Fix: Replace the = signs with colons when creating the object.
 
-Status: Ongoing
+Status: Fixed
 
 This issue was already identified in Bug 2 during the manual code review. ESLint reported 1 error and 0 warnings. No additional issues were found because ESLint stopped at the error.
