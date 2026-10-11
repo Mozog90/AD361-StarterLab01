@@ -160,10 +160,6 @@ When I ran the Jest tests, the test suite failed because TypeScript detected tha
 
 ## ESLint Results
 
-Not completed yet. Any additional issues found by ESLint will be added here.
-
-## ESLint Results
-
 ### ESLint Finding 1
 
 Location: receipt.ts, addItem(), line 17
